@@ -1,0 +1,354 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: rgb(143, 212, 234); */
+}
+/*  Seccion Inicio */
+
+#inicio {
+    background: url(img/portfolio-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio header {
+    background-color: aliceblue;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#inicio header .navbar-nav a {
+    color: rgba(0, 0, 0, 0.948);
+    font-weight: normal;
+}
+
+.nav-link:hover {
+    border-bottom: solid 3px #09926e;
+}
+
+.span-icon {
+    color: #09926e;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+#inicio header .navbar-brand {
+    color:#ae6017;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+#inicio .presentacion {
+    max-width: 1100px;
+    margin: auto;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .presentacion .bienvenidos {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-top: 110px;
+}
+
+#inicio .presentacion h2 {
+    font-size: 45px;
+    margin-bottom: 27px;
+    text-align: center;
+    font-family: lato;
+}
+
+#inicio .presentacion h2 span {
+    color: burlywood;
+}
+
+#inicio .presentacion .descripcion {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 20px;
+    text-align: center;
+    font-family: poppins;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 900px;
+    padding-bottom: 2px;
+}
+
+#inicio .presentacion .wrapper ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    list-style: none;
+    padding: 0 196px 0 196px;
+    margin: 5px;
+}
+
+#inicio .presentacion .wrapper ul li {
+    width: 38px;
+    height: 38px;
+    margin: 30px 5px;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: left;
+    transition: all 0.4s ease;
+}
+
+#inicio .presentacion .wrapper ul li .bi {
+    margin-top: 20px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+}
+
+/* efectos google */
+
+#inicio .presentacion .wrapper ul li .bi-google {
+    color: #fa4444;
+}
+
+#inicio .presentacion .wrapper ul li:hover.google {
+    box-shadow: 0 0 30px #ff2e2e;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}
+
+#inicio .presentacion .wrapper ul li:hover .bi-google {
+    color: #f84d4d;
+    /* text-shadow:0 0 30px #fc4d4d; */
+    transition: all 0.4s ease;
+}
+
+/* efectos facebook */
+
+#inicio .presentacion .wrapper ul li .bi-facebook {
+    color: #043df9;
+}
+
+#inicio .presentacion .wrapper ul li:hover.facebook {
+    box-shadow: 0 0 30px #2606f7;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}
+
+#inicio .presentacion .wrapper ul li:hover .bi-facebook {
+    color: #354cfb;
+    /* text-shadow:0 0 30px #354cfb; */
+    transition: all 0.4s ease;
+}
+
+/* efectos whatsapp */
+
+#inicio .presentacion .wrapper ul li .bi-whatsapp {
+    color: #61df23;
+}
+
+#inicio .presentacion .wrapper ul li:hover.whatsapp {
+    box-shadow: 0 0 30px #4ad605;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}
+
+#inicio .presentacion .wrapper ul li:hover .bi-whatsapp {
+    color: #45cd01;
+    /* text-shadow:0 0 30px #61df23; */
+    transition: all 0.4s ease;
+}
+
+/* efectos messenger */
+
+#inicio .presentacion .wrapper ul li .bi-messenger {
+    color: #732af2;
+}
+
+#inicio .presentacion .wrapper ul li:hover.messenger {
+    box-shadow: 0 0 30px #7502f8;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease;
+}  
+
+#inicio .presentacion .wrapper ul li:hover .bi-messenger {
+    color: #732af2;
+    /* text-shadow:0 0 30px #732af2; */
+    transition: all 0.4s ease;
+}
+
+/* efectos discord */
+
+#inicio .presentacion .wrapper ul li .bi-discord {
+    color: rgba(138, 16, 252, 0.936);
+}
+
+#inicio .presentacion .wrapper ul li:hover.discord {
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+    color: #732af2;
+    background-color: rgb(47, 3, 109);
+    transition: all 0.4s ease;
+}  
+
+#inicio .presentacion .wrapper ul li:hover .bi-discord {
+    color: azure;
+    text-shadow:0 0 30px azure;
+    transition: all 0.4s ease;
+}
+
+/*  Boton IR A PORTFOLIO */
+
+#inicio .presentacion .boton {
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 15px 20px;
+    border: 1px solid rgb(253, 253, 253);
+    border-radius: 50px;
+    color: rgb(240, 243, 244);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 100;
+    transition: .5s;
+}
+
+#inicio .presentacion .boton:hover {
+    /* background-color: #040404; */
+    box-shadow: 0 0 37px #259ac9;
+    text-transform: uppercase;
+    text-shadow: #dfad08;
+    color: #02568b;
+    background-color: white;
+    font-weight: 450;
+    transition: .1s;
+}
+
+/*  seccion sobre mi */
+
+#hacerca {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/img/codigopantalla.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    max-width: 1100vh;
+}
+
+#hacerca div .col-md {
+    /* margin: 100px;
+    max-width: 700px; */
+    max-width: 600px;
+    margin: 10px 100px;
+    padding-top: 3%;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.card-text {
+    color: antiquewhite;
+    font-family: lato;
+    font-size: 14px;
+}
+
+h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    letter-spacing: 4px;
+    font-size: 25px;
+    top: 10%;
+}
+
+.soy {
+    font-family: lato;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.btn-cv {
+    border: 2px solid #fea8d8;
+    font-size: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: none;
+    color: #f8add0;
+    padding: 7px 10px;
+}
+
+.btn-cv:hover {
+    color: rgb(2, 145, 97);
+    border: solid 3px rgb(2, 145, 97);
+    box-shadow: 0 0 40px rgb(2, 145, 97);
+    text-transform: uppercase;
+    background-color: white;
+    transition: all .2s ease;
+}
+
+small .frase {
+    color: #fee104;
+    position: absolute;
+    left: 45%;
+    top: auto;
+}
+
+/*  Seccion Portfolio */
+
+#portfolio {
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(/img/fondoportfolio.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    max-width: 1100vh;
+}
+
+#portfolio h2 {
+    font-family: Impact;
+    color: white;
+}
+h3 {
+    font-size: 1.2em;
+    color: white;
+}
+
+.fw-600 {
+    font-size: 1.7em;
+}
+
+/*  Seccion Contacto */
+
+.contact {
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(/img/tasa-pc.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    max-width: 1100vh;
+}
+
+#contacto h2 {
+    font-family: Impact;
+}
+
+
